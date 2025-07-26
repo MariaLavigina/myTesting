@@ -4,10 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <!-- this should prevent strange coloring of svg -->
     <meta name="color-scheme" content="light dark" />
 
-    <!-- Alternate Language Versions -->
     <link rel="alternate" hreflang="en" href="https://example.com/en/" />
     <link rel="alternate" hreflang="ru" href="https://example.com/ru/" />
     <link rel="alternate" hreflang="he" href="https://example.com/he/" />
@@ -20,7 +18,7 @@
       content="Личная история иммиграции из Советского Союза в Израиль в 1990-х — путь женщины через перемены, поиск себя и опыт целого поколения."
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts -->
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -43,46 +41,138 @@
     }
   </style>
 
-  <body class="p-0 m-0">
-    <section
-      class="relative w-full max-w-md aspect-[380/1348] bg-[url('./images/mobile-images/first-wave-mobile-firstPage.svg')] bg-no-repeat bg-contain bg-center"
-    >
-      <!-- Content wrapper with vertical + horizontal safe padding -->
-      <div
-        class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
-      >
-        <div class="text-white text-center w-full leading-[1.4]">
-          <h1 class="text-[clamp(22px,5vw,30px)] font-bold">каждый выбирает</h1>
-          <h2 class="text-[clamp(40px,10vw,50px)] font-bold mb-4">для себя</h2>
-          <h3 class="text-[clamp(18px,5vw,24px)] mt-12 mb-4">
-            Это история о том как трудный выбор обернулся неожиданным, 
-            невероятным счастьем
-          </h3>
+  <!-- <body class="p-0 m-0"> -->
+  <body class="m-0 p-0 bg-[#302024]">
+    <!-----------------------------the main block------------------------------------->
+    <!-------------------------------------------------------------------------------->
+    <div class="relative w-full">
+      <!----------- Mobile layout ----------->
+      <!----------------- 1 ----------------->
+      <section class="relative block w-full max-w-md md:hidden">
+        <!-- Hero image at the top -->
+        <img
+          src="images/mobile-images/GL-HeroPhoto-Mobile.jpg"
+          alt="Hero image"
+          class="object-cover w-full h-auto"
+        />
 
-          <div class="text-[clamp(16px,2.5vw,20px)]">
-            <p class="mt-12 mb-4">
-              Меня зовут Галина. Я родилась в 1941 году в мире, который тогда
-              назывался Советским Союзом. Эта история — не просто рассказ о
-              прошлом, а путь моего личного пробуждения, который привёл меня к
-              самому трудному и самому правильному решению в моей жизни.
-            </p>
-            <p class="mb-4">
-              Это рассказ о том, почему в 1990-х годах я решила покинуть
-              Советский Союз вместе с моей матерью, которой на тот момент было
-              за восемьдесят, и моей маленькой дочерью, которой было всего семь
-              лет.
-            </p>
-            <p class="mb-4">
-              Я решила назвать свою историю «Каждый выбирает для себя», потому
-              что в конце концов, где бы мы ни родились и чему бы нас ни учили,
-              каждому из нас приходится делать свой выбор. Выбор между страхом и
-              смелостью, между молчанием и правдой, между выживанием и настоящей
-              жизнью.
-            </p>
-            <p>Это история о том, как свой выбор сделала я.</p>
+        <!-- SVG wave overlapping hero image -->
+        <div class="relative z-10 -mt-32 sm:-mt-44 md:-mt-56">
+          <img
+            src="images/mobile-images/first-wave-mobile-firstPage.svg"
+            alt="Wave SVG"
+            class="w-full h-auto"
+          />
+
+          <!-- Text over the SVG wave -->
+          <div
+            class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
+          >
+            <div class="text-white text-center w-full leading-[1.4]">
+              <h1
+                class="text-[25px] font-bold italic"
+                style="font-family: 'Playfair Display', serif"
+              >
+                каждый выбирает
+              </h1>
+              <h2
+                class="text-[55px] font-bold italic mb-4"
+                style="font-family: 'Playfair Display', serif"
+              >
+                для себя
+              </h2>
+              <h3
+                class="text-[18px] italic mt-12 mb-4"
+                style="font-family: 'Roboto', sans-serif"
+              >
+                Это история о том как трудный выбор обернулся неожиданным, 
+                невероятным счастьем
+              </h3>
+
+              <div class="text-[16px]">
+                <p class="mt-12 mb-4">
+                  Меня зовут Галина. Я родилась в 1941 году в мире, который
+                  тогда назывался Советским Союзом. Эта история — не просто
+                  рассказ о прошлом, а путь моего личного пробуждения, который
+                  привёл меня к самому трудному и самому правильному решению в
+                  моей жизни.
+                </p>
+                <p class="mb-4">
+                  Это рассказ о том, почему в 1990-х годах я решила покинуть
+                  Советский Союз вместе с моей матерью, которой на тот момент
+                  было за восемьдесят, и моей маленькой дочерью, которой было
+                  всего семь лет.
+                </p>
+                <p class="mb-4">
+                  Я решила назвать свою историю «Каждый выбирает для себя»,
+                  потому что в конце концов, где бы мы ни родились и чему бы нас
+                  ни учили, каждому из нас приходится делать свой выбор. Выбор
+                  между страхом и смелостью, между молчанием и правдой, между
+                  выживанием и настоящей жизнью.
+                </p>
+                <p>Это история о том, как свой выбор сделала я.</p>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      <section class="relative block w-full max-w-md md:hidden">
+        <div class="px-[5%] text-white text-center mt-14 mb-14">
+          <h3 class="text-[18px] italic">
+            Мы имеем возможность, именно возможность и уже наше дело
+            воспользоваться ею или нет.
+          </h3>
+        </div>
+      </section>
+
+      <section class="relative block w-full max-w-md md:hidden">
+        <img
+          src="images/mobile-images/second-wave-mobile-firstPage.svg"
+          alt="Wave SVG"
+          class="w-full h-auto"
+        />
+        <div
+          class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
+        >
+          <div class="text-white text-center w-full leading-[1.4]">
+            <h1 class="text-[40px] font-bold italic">Про нашу</h1>
+            <h2 class="text-[70px] font-bold italic mb-4">алию</h2>
+
+            <p class="text-[18px] mt-12 mb-4">
+              Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
+              напишут об этом времени. А как же наша бабушка, ведь... А мы
+              напишем за неё по ее письмам. У меня есть ее письма к Томочке и
+              Эрику (они прислали их мне по моей просьбе) и письма к Игорю,
+              которые я попросила вернуть. Томочка и я не можем их читать -
+              ревем и все тут.
+            </p>
+            <p class="mb-4">
+              Но тут деваться некуда. К тому же услышала вот такое определение
+              человека: “Человек - это животное, способное создавать новые
+              тексты”. Ну что ж, вот и случай понять отношусь ли я к человекам.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!----------- Tablet layout ----------->
+      <!----------------- 1 ----------------->
+      <section
+        class="hidden md:block lg:hidden aspect-[768/1600] bg-[url('/images/first-wave-tablet.svg')] bg-no-repeat bg-contain bg-center"
+      >
+        <!-- tablet content -->
+      </section>
+
+      <!----------- Desktop layout  ----------->
+      <!----------------- 1 ----------------->
+      <section
+        class="hidden lg:block aspect-[1918/3260] bg-[url('/images/desktop-images/firstSVG-mainPage-desktop.svg')] bg-no-repeat bg-contain bg-center"
+      >
+        <!-- desktop content -->
+      </section>
+    </div>
+    <!--------------------------closing the main block-------------------------------->
+    <!-------------------------------------------------------------------------------->
   </body>
 </html>
