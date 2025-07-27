@@ -27,152 +27,301 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
       rel="stylesheet"
     />
+    <style>
+      h1,
+      h2 {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-weight: bold;
+      }
+      h3 {
+        font-family: "Roboto", sans-serif;
+        font-style: italic;
+      }
+      p {
+        font-family: "Roboto", sans-serif;
+      }
+    </style>
   </head>
-  <style>
-    h1,
-    h2 {
-      font-family: "Playfair Display", serif;
-      font-style: italic;
-    }
-    h3 {
-      font-family: "Roboto", sans-serif;
-      font-style: italic;
-      font-weight: 100;
-    }
-  </style>
 
   <!-- <body class="p-0 m-0"> -->
   <body class="m-0 p-0 bg-[#302024]">
-    <!-----------------------------the main block------------------------------------->
-    <!-------------------------------------------------------------------------------->
-    <div class="relative w-full">
-      <!----------- Mobile layout ----------->
-      <!----------------- 1 ----------------->
-      <section class="relative block w-full max-w-md md:hidden">
-        <!-- Hero image at the top -->
-        <img
-          src="images/mobile-images/GL-HeroPhoto-Mobile.jpg"
-          alt="Hero image"
-          class="object-cover w-full h-auto"
-        />
-
-        <!-- SVG wave overlapping hero image -->
-        <div class="relative z-10 -mt-32 sm:-mt-44 md:-mt-56">
+    <main lang="ru">
+      <!-----------------------------the main block------------------------------------->
+      <!-------------------------------------------------------------------------------->
+      <div class="relative w-full">
+        <!----------- Mobile layout ----------->
+        <!----------------- 1 ----------------->
+        <section class="relative block w-full md:hidden">
+          <!-- Hero image at the top -->
           <img
-            src="images/mobile-images/first-wave-mobile-firstPage.svg"
-            alt="Wave SVG"
-            class="w-full h-auto"
+            src="images/mobile-images/GL-HeroPhoto-Mobile.jpg"
+            alt="Galina Lavigina"
+            class="object-cover w-full h-auto"
           />
 
-          <!-- Text over the SVG wave -->
+          <!-- SVG wave overlapping hero image -->
+          <div class="relative z-10 -mt-32 sm:-mt-44 md:-mt-56">
+            <img
+              src="images/mobile-images/first-wave-mobile-firstPage.svg"
+              alt="first wave decorative image page one"
+              class="w-full h-auto"
+            />
+
+            <!-- Text over the SVG wave -->
+            <div
+              class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
+            >
+              <div class="text-white text-center w-full leading-[1.4]">
+                <h1 class="text-[25px] font-bold">каждый выбирает</h1>
+                <h2 class="text-[57px] font-bold mb-4">для себя</h2>
+                <h3 class="text-[18px] mt-12 mb-4">
+                  Это история о том как трудный выбор обернулся неожиданным, 
+                  невероятным счастьем
+                </h3>
+
+                <div class="text-[16px]">
+                  <p class="mt-12 mb-4">
+                    Меня зовут Галина. Я родилась в 1941 году в мире, который
+                    тогда назывался Советским Союзом. Эта история — не просто
+                    рассказ о прошлом, а путь моего личного пробуждения, который
+                    привёл меня к самому трудному и самому правильному решению в
+                    моей жизни.
+                  </p>
+                  <p class="mb-4">
+                    Это рассказ о том, почему в 1990-х годах я решила покинуть
+                    Советский Союз вместе с моей матерью, которой на тот момент
+                    было за восемьдесят, и моей маленькой дочерью, которой было
+                    всего семь лет.
+                  </p>
+                  <p class="mb-4">
+                    Я решила назвать свою историю «Каждый выбирает для себя»,
+                    потому что в конце концов, где бы мы ни родились и чему бы
+                    нас ни учили, каждому из нас приходится делать свой выбор.
+                    Выбор между страхом и смелостью, между молчанием и правдой,
+                    между выживанием и настоящей жизнью.
+                  </p>
+                  <p>Это история о том, как свой выбор сделала я.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="relative block w-full md:hidden">
+          <div class="px-[5%] text-white text-center mt-14 mb-14">
+            <h3 class="text-[18px]">
+              Мы имеем возможность, именно возможность и уже наше дело
+              воспользоваться ею или нет.
+            </h3>
+          </div>
+        </section>
+
+        <section class="relative block w-full md:hidden">
+          <img
+            src="images/mobile-images/second-wave-mobile-firstPage.svg"
+            alt="second wave decorative image page one"
+            class="w-full h-auto"
+          />
           <div
             class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
           >
             <div class="text-white text-center w-full leading-[1.4]">
-              <h1
-                class="text-[25px] font-bold italic"
-                style="font-family: 'Playfair Display', serif"
-              >
-                каждый выбирает
-              </h1>
-              <h2
-                class="text-[55px] font-bold italic mb-4"
-                style="font-family: 'Playfair Display', serif"
-              >
-                для себя
-              </h2>
-              <h3
-                class="text-[18px] italic mt-12 mb-4"
-                style="font-family: 'Roboto', sans-serif"
-              >
-                Это история о том как трудный выбор обернулся неожиданным, 
-                невероятным счастьем
-              </h3>
+              <h1 class="text-[40px] font-bold">Про нашу</h1>
+              <h2 class="text-[70px] font-bold mb-4">алию</h2>
 
-              <div class="text-[16px]">
-                <p class="mt-12 mb-4">
-                  Меня зовут Галина. Я родилась в 1941 году в мире, который
-                  тогда назывался Советским Союзом. Эта история — не просто
-                  рассказ о прошлом, а путь моего личного пробуждения, который
-                  привёл меня к самому трудному и самому правильному решению в
-                  моей жизни.
-                </p>
-                <p class="mb-4">
-                  Это рассказ о том, почему в 1990-х годах я решила покинуть
-                  Советский Союз вместе с моей матерью, которой на тот момент
-                  было за восемьдесят, и моей маленькой дочерью, которой было
-                  всего семь лет.
-                </p>
-                <p class="mb-4">
-                  Я решила назвать свою историю «Каждый выбирает для себя»,
-                  потому что в конце концов, где бы мы ни родились и чему бы нас
-                  ни учили, каждому из нас приходится делать свой выбор. Выбор
-                  между страхом и смелостью, между молчанием и правдой, между
-                  выживанием и настоящей жизнью.
-                </p>
-                <p>Это история о том, как свой выбор сделала я.</p>
+              <p class="text-[16px] mt-12 mb-4">
+                Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
+                напишут об этом времени. А как же наша бабушка, ведь... А мы
+                напишем за неё по ее письмам. У меня есть ее письма к Томочке и
+                Эрику (они прислали их мне по моей просьбе) и письма к Игорю,
+                которые я попросила вернуть. Томочка и я не можем их читать -
+                ревем и все тут.
+              </p>
+              <p class="text-[16px] mb-4">
+                Но тут деваться некуда. К тому же услышала вот такое определение
+                человека: “Человек - это животное, способное создавать новые
+                тексты”. Ну что ж, вот и случай понять отношусь ли я к
+                человекам.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="relative block w-full md:hidden">
+          <div class="px-[5%] text-white text-center mt-14 mb-14">
+            <h1 class="text-[10px] font-bold">Вот они</h1>
+            <h2 class="text-[21px] font-bold mb-4">эти три женщины</h2>
+
+            <img
+              src="images/mobile-images/threeWomen-mobile.jpg"
+              alt="Три женщины, три поколения: я, моя мама и моя доча Маша"
+              class="object-cover w-full h-auto"
+            />
+          </div>
+        </section>
+        <section class="relative block w-full md:hidden">
+          <div class="px-[5%] text-white text-center mt-14 mb-14">
+            <h3 class="text-[18px] mb-12">
+              Моя история разделена на четыре части:
+            </h3>
+            <p class="text-[16px] mb-4">
+              Первая глава рассказывает о внезапном, но мощном осознании,
+              которое пробудилось внутри меня и подтолкнуло к самому трудному
+              выбору в моей жизни: покинуть единственный дом, который я знала.
+            </p>
+            <p class="text-[16px] mb-4">
+              Вторая глава посвящена нашему новому началу в Израиле — жизни,
+              полной испытаний, но также чудес, красоты и открытий. Это была
+              земля, где нам пришлось строить всё с нуля, но каждый маленький
+              шаг вперёд ощущался как настоящая победа.
+            </p>
+            <p class="text-[16px] mb-4">
+              Третья глава принадлежит моей матери. Через её письма вы увидите
+              наш путь её глазами — её надежды, её страхи, её тихую силу, с
+              которой она встречала перемены, окружавшие нас.
+            </p>
+            <p class="text-[16px] mb-4">
+              И, наконец, последняя глава — это сборник маленьких историй,
+              которые рассказала моя дочь, — историй, порой забавных, порой
+              трогательных, но всегда наполненных духом ребёнка, который,
+              несмотря ни на что, находил в себе силы смеяться, мечтать и расти.
+            </p>
+            <p class="text-[16px] mb-4">
+              Я рада поделиться своей историей с вами
+            </p>
+          </div>
+        </section>
+
+        <section class="relative block w-full md:hidden">
+          <div class="px-[5%] text-white text-center mt-14 mb-14">
+            <h2 class="text-[40px]">cписок глав</h2>
+          </div>
+        </section>
+
+        <!----------- Tablet layout ----------->
+        <!----------------- 1 ----------------->
+
+        <section class="relative hidden w-full md:block lg:hidden">
+          <!-- Hero image for iPad -->
+          <img
+            src="images/ipad-images/GL-HeroPhoto-ipad.jpg"
+            alt="Galina Lavigina"
+            class="object-cover w-full h-auto"
+          />
+
+          <!-- SVG wave overlapping hero image (different SVG) -->
+          <div class="relative z-10 -mt-32 sm:-mt-44 md:-mt-56">
+            <img
+              src="images/ipad-images/first-wave-tablet.svg"
+              alt="first wave decorative image tablet"
+              class="w-full h-auto"
+            />
+
+            <!-- Text over the SVG wave -->
+            <div
+              class="absolute inset-0 px-[15%] pt-[10vh] pb-[10vh] flex items-center justify-center"
+            >
+              <div class="text-white text-center w-full leading-[1.4]">
+                <h1 class="text-[40px] font-bold italic">каждый выбирает</h1>
+                <h2 class="text-[95px] font-bold mb-4 italic">для себя</h2>
+                <h3 class="text-[25px] mt-12 mb-4 italic">
+                  Это история о том как трудный выбор обернулся неожиданным, 
+                  невероятным счастьем. 
+                </h3>
+
+                <div class="text-[20px]">
+                  <p class="mt-12 mb-4">
+                    Меня зовут Галина. Я родилась в 1941 году в мире, который
+                    тогда назывался Советским Союзом. Эта история — не просто
+                    рассказ о прошлом, а путь моего личного пробуждения, который
+                    привёл меня к самому трудному и самому правильному решению в
+                    моей жизни.
+                  </p>
+                  <p class="mt-12 mb-4">
+                    Это рассказ о том, почему в 1990-х годах я решила покинуть
+                    Советский Союз вместе с моей матерью, которой на тот момент
+                    было за восемьдесят, и моей маленькой дочерью, которой было
+                    всего семь лет.
+                  </p>
+                  <p class="mt-12 mb-4">
+                    Я решила назвать свою историю «Каждый выбирает для себя»,
+                    потому что в конце концов, где бы мы ни родились и чему бы
+                    нас ни учили, каждому из нас приходится делать свой выбор.
+                    Выбор между страхом и смелостью, между молчанием и правдой,
+                    между выживанием и настоящей жизнью.
+                  </p>
+                  <p class="mt-12 mb-4">
+                    Это история о том, как свой выбор сделала я.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      <section class="relative block w-full max-w-md md:hidden">
-        <div class="px-[5%] text-white text-center mt-14 mb-14">
-          <h3 class="text-[18px] italic">
-            Мы имеем возможность, именно возможность и уже наше дело
-            воспользоваться ею или нет.
-          </h3>
-        </div>
-      </section>
-
-      <section class="relative block w-full max-w-md md:hidden">
-        <img
-          src="images/mobile-images/second-wave-mobile-firstPage.svg"
-          alt="Wave SVG"
-          class="w-full h-auto"
-        />
-        <div
-          class="absolute inset-0 px-[5%] pt-[10vh] pb-[10vh] flex items-center justify-center"
-        >
-          <div class="text-white text-center w-full leading-[1.4]">
-            <h1 class="text-[40px] font-bold italic">Про нашу</h1>
-            <h2 class="text-[70px] font-bold italic mb-4">алию</h2>
-
-            <p class="text-[18px] mt-12 mb-4">
-              Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
-              напишут об этом времени. А как же наша бабушка, ведь... А мы
-              напишем за неё по ее письмам. У меня есть ее письма к Томочке и
-              Эрику (они прислали их мне по моей просьбе) и письма к Игорю,
-              которые я попросила вернуть. Томочка и я не можем их читать -
-              ревем и все тут.
-            </p>
-            <p class="mb-4">
-              Но тут деваться некуда. К тому же услышала вот такое определение
-              человека: “Человек - это животное, способное создавать новые
-              тексты”. Ну что ж, вот и случай понять отношусь ли я к человекам.
-            </p>
+        </section>
+        <section class="relative hidden w-full md:block lg:hidden">
+          <div class="px-[20%] text-white text-center mt-14 mb-14">
+            <h3 class="text-[25px]">
+              Мы имеем возможность, именно возможность и уже наше дело
+              воспользоваться ею или нет.
+            </h3>
           </div>
-        </div>
-      </section>
+        </section>
+        <section class="relative hidden w-full md:block lg:hidden">
+          <img
+            src="images/ipad-images/second-wave-tablet.svg"
+            alt="second wave decorative image page one"
+            class="w-full h-auto"
+          />
+          <div
+            class="absolute inset-0 px-[10%] pt-[10vh] pb-[10vh] flex items-center justify-center"
+          >
+            <div class="text-white text-center w-full leading-[1.4]">
+              <h1 class="text-[40px] font-bold -mb-8">Про нашу</h1>
+              <h2 class="text-[80px] font-bold mb-4">алию</h2>
 
-      <!----------- Tablet layout ----------->
-      <!----------------- 1 ----------------->
-      <section
-        class="hidden md:block lg:hidden aspect-[768/1600] bg-[url('/images/first-wave-tablet.svg')] bg-no-repeat bg-contain bg-center"
-      >
-        <!-- tablet content -->
-      </section>
+              <p class="text-[20px] mt-12 mb-4">
+                Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
+                напишут об этом времени. А как же наша бабушка, ведь... А мы
+                напишем за неё по ее письмам. У меня есть ее письма к Томочке и
+                Эрику (они прислали их мне по моей просьбе) и письма к Игорю,
+                которые я попросила вернуть. Томочка и я не можем их читать -
+                ревем и все тут.
+              </p>
+              <p class="text-[20px] mb-4">
+                Но тут деваться некуда. К тому же услышала вот такое определение
+                человека: “Человек - это животное, способное создавать новые
+                тексты”. Ну что ж, вот и случай понять отношусь ли я к
+                человекам.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section class="relative hidden w-full md:block lg:hidden">
+          <div class="px-[5%] text-white text-center mt-14 mb-14">
+            <h1 class="text-[70px] font-bold">Вот они</h1>
+            <h2 class="text-[31px] font-bold mb-16">эти три женщины</h2>
 
-      <!----------- Desktop layout  ----------->
-      <!----------------- 1 ----------------->
-      <section
-        class="hidden lg:block aspect-[1918/3260] bg-[url('/images/desktop-images/firstSVG-mainPage-desktop.svg')] bg-no-repeat bg-contain bg-center"
-      >
-        <!-- desktop content -->
-      </section>
-    </div>
-    <!--------------------------closing the main block-------------------------------->
-    <!-------------------------------------------------------------------------------->
+            <img
+              src="images/mobile-images/threeWomen-mobile.jpg"
+              alt="Три женщины, три поколения: я, моя мама и моя доча Маша"
+              class="object-cover w-full h-auto"
+            />
+          </div>
+        </section>
+        <section class="relative hidden w-full md:block lg:hidden">
+          <div class="px-[5%] text-white text-center mt-28 mb-14">
+            <h2 class="text-[65px]">cписок глав</h2>
+          </div>
+        </section>
+
+        <!----------- Desktop layout  ----------->
+        <!----------------- 1 ----------------->
+        <section class="relative hidden w-full lg:block">
+          <!-- desktop content -->
+        </section>
+      </div>
+      <!--------------------------closing the main block-------------------------------->
+      <!-------------------------------------------------------------------------------->
+    </main>
   </body>
 </html>

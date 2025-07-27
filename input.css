@@ -1,0 +1,14 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1,
+  h2 {
+    @apply italic font-bold font-playfair;
+  }
+
+  h3 {
+    @apply italic font-thin font-roboto;
+  }
+} */
