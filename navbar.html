@@ -1,0 +1,109 @@
+<nav
+  class="fixed top-0 left-0 w-full z-50 bg-gradient-to-l from-[#9399F0] to-[#2C192C] h-20"
+>
+  <div class="flex justify-between items-center px-6 text-white h-full">
+    <!-- Desktop Navigation Links -->
+    <div
+      id="navbar"
+      class="hidden lg:flex space-x-5 text-xl md:text-lg lg:text-base font-['Roboto']"
+    >
+      <a href="#" class="hover:text-gray-400 px-6 text-white"
+        >главная страница</a
+      >
+      <span class="text-white" style="transform: rotate(35deg)">|</span>
+      <a href="#" class="hover:text-gray-400 px-6 text-white">списки глав</a>
+      <span class="text-white" style="transform: rotate(35deg)">|</span>
+      <a href="#" class="hover:text-gray-400 px-6 text-white"
+        >свяжитесь со мной</a
+      >
+    </div>
+
+    <!-- Hamburger Icon -->
+    <div
+      id="hamburger"
+      class="lg:hidden z-40 cursor-pointer flex flex-col justify-center items-center space-y-1 w-8 h-8 group"
+    >
+      <div
+        id="line1"
+        class="w-6 h-0.5 bg-white transition-transform duration-300 origin-center"
+      ></div>
+      <div
+        id="line2"
+        class="w-6 h-0.5 bg-white transition-opacity duration-300"
+      ></div>
+      <div
+        id="line3"
+        class="w-6 h-0.5 bg-white transition-transform duration-300 origin-center"
+      ></div>
+    </div>
+
+    <!-- Mobile Dropdown Navbar (MOVED inside sticky div) -->
+    <div
+      id="mobileMenu"
+      class="hidden lg:hidden absolute top-16 left-4 w-80 bg-[#302024] font-['Roboto'] text-white p-6 rounded-lg scale-y-0 origin-top shadow-xl transition-transform duration-300 ease-in-out"
+    >
+      <div class="flex flex-col divide-y divide-white divide-opacity-20">
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          >Главная Страница</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          >списки глав</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          >cвяжитесь со мной</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          ><span class="font-bold">часть 1</span> - Почему я уехала</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          ><span class="font-bold">часть 2</span> - Прилетели мыв Израиль</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          ><span class="font-bold">часть 3</span> - Mоя мама</a
+        >
+        <a
+          href="#"
+          class="py-[15px] active:scale-95 active:bg-white/10 focus-visible:outline-none focus-visible:bg-white/20 transition-transform duration-150 ease-in-out text-white"
+          ><span class="font-bold">часть 4</span> - Mоя Masha</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+<!-- Language Toggle button -->
+<!-- <div class="fixed top-4 right-6 z-50">
+  <div class="w-[120px] h-[38px]">
+    <button
+      id="langToggle"
+      class="w-full h-full flex items-center justify-center gap-2 px-3 py-1.5 rounded-full text-white text-base font-semibold tracking-wide uppercase border border-white bg-transparent backdrop-blur-sm text-sm hover:bg-white/10 hover:text-white active:bg-[#E4D5F5] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 transition-all duration-200 ease-in-out"
+    >
+      <span id="langLabel">Русский</span>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="3"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        viewBox="0 0 24 24"
+      >
+        <polyline points="9 6 15 12 9 18" />
+      </svg>
+    </button>
+  </div>
+</div> -->
+<!-- Language Toggle button -->

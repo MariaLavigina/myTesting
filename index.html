@@ -41,11 +41,31 @@
       p {
         font-family: "Roboto", sans-serif;
       }
+      footer p {
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        line-height: 1.5;
+      }
+      footer h1 {
+        font-family: "Playfair Display", serif;
+        font-style: italic;
+        font-size: 85px;
+  
+      }
+     .chapter-footer h2 {
+        font-family: "Playfair Display", serif;
+       font-style: italic;
+       font-size: 25px;
+      }
+
+
     </style>
   </head>
 
   <!-- <body class="p-0 m-0"> -->
   <body class="m-0 p-0 bg-[#302024]">
+        <!-- Navbar -->
+    <div id="navbar-placeholder"></div>
     <main lang="ru">
       <!------------------------------the main block-------------------------------------->
       <!---------------------------------------------------------------------------------->
@@ -151,7 +171,7 @@
           </div>
         </section>
         <section class="relative block w-full md:hidden">
-          <div class="px-[5%] text-white text-center mt-14 mb-14">
+          <div class="px-[5%] text-white text-center mt-14 mb-14 ">
             <h1 class="text-[70px] font-bold">Вот они</h1>
             <h2 class="text-[30px] font-bold mb-16">эти три женщины</h2>
 
@@ -163,7 +183,7 @@
           </div>
         </section>
         <section class="relative block w-full md:hidden">
-          <div class="px-[5%] text-white text-center mt-14 mb-14">
+          <div class="px-[5%] text-white text-center mt-14 mb-14 ">
             <h3 class="text-[25px] mb-16 mt-16">
               Моя история разделена на четыре части:
             </h3>
@@ -200,6 +220,9 @@
             <h2 class="text-[40px]">cписок глав</h2>
           </div>
         </section>
+    <!----calling the fotter mobile & ipads--->
+
+
 
         <!----------- Tablet layout ----------->
         <!----------------- 1 ----------------->
@@ -303,8 +326,8 @@
         </section>
         <section class="relative hidden w-full md:block lg:hidden">
           <div class="px-[5%] text-white text-center mt-14 mb-14">
-            <h1 class="text-[70px] font-bold">Вот они</h1>
-            <h2 class="text-[31px] font-bold mb-16">эти три женщины</h2>
+            <h1 class="text-[100px] font-bold">Вот они</h1>
+            <h2 class="text-[42px] font-bold mb-16 -mt-6">эти три женщины</h2>
 
             <img
               src="images/mobile-images/threeWomen-mobile.jpg"
@@ -318,6 +341,7 @@
             <h2 class="text-[65px]">cписок глав</h2>
           </div>
         </section>
+        
 
         <!----------- Desktop layout  ----------->
         <!----------------- 1 ----------------->
@@ -345,28 +369,25 @@
             >
               <div class="text-white text-center w-full leading-[1.4]">
                 <h1
-                  style="font-size: clamp(48px, 4vw, 80px)"
-                  class="italic font-bold"
+              
+                  class="italic font-bold text-[60px]"
                 >
                   каждый выбирает
                 </h1>
                 <h2
-                  style="font-size: clamp(100px, 8vw, 140px)"
-                  class="mb-4 italic font-bold"
+            
+                  class="mb-4 italic font-bold text-[150px]"
                 >
                   для себя
                 </h2>
 
                 <div
-                  class="mx-auto max-w-[900px] text-center"
-                  style="
-                    font-size: clamp(24px, 1.5vw, 33px);
-                    width: clamp(30vw, calc(60vw + 1rem), 70vw);
-                  "
+                  class="mx-auto max-w-[900px] text-center text-[30px]"
+             
                 >
                   <h3
-                    style="font-size: clamp(20px, 2vw, 30px)"
-                    class="mt-12 mb-4 italic"
+                  
+                    class="mt-12 mb-4 italic text-[40px]"
                   >
                     Это история о том как трудный выбор обернулся неожиданным, 
                     невероятным счастьем. 
@@ -402,9 +423,7 @@
         <section class="relative hidden w-full lg:block">
           <div class="px-[20%] text-white text-center mt-14 mb-14">
             <h3
-              class="mt-12 mb-4 italic mx-auto text-center text-[clamp(20px,2vw,30px)]"
-              style="max-width: 70vw"
-            >
+              class="mt-12 mb-4 italic mx-auto text-center text-[40px]" >
               Мы имеем возможность, именно возможность и уже наше дело
               воспользоваться ею или нет.
             </h3>
@@ -419,29 +438,40 @@
           <div
             class="absolute inset-0 px-[10%] pt-[10vh] pb-[10vh] flex items-center justify-center"
           >
-            <div class="text-white text-center w-full leading-[1.4]">
-              <h1 class="text-[40px] font-bold -mb-8">Про нашу</h1>
-              <h2 class="text-[80px] font-bold mb-4">алию</h2>
-
-              <p
-                class="text-base lg:text-[clamp(20px,1.2vw+1rem,30px)] mt-12 mb-4"
-              >
-                > Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
+            <div
+              class="mx-auto max-w-[900px] text-center text-white" >
+              <h1
+                class="italic font-bold text-[120px]">
+                Про нашу
+              </h1>
+              <h2
+                class="mb-4 -mt-32 italic font-bold text-[220px]">
+                алию
+              </h2>
+               <div  class="mx-auto max-w-[900px] text-center text-[30px]">
+              <p class="mt-12 mb-4">
+                Что значит нашу? Это идея Маши - три женщины : мама, Маша и я
                 напишут об этом времени. А как же наша бабушка, ведь... А мы
                 напишем за неё по ее письмам. У меня есть ее письма к Томочке и
                 Эрику (они прислали их мне по моей просьбе) и письма к Игорю,
                 которые я попросила вернуть. Томочка и я не можем их читать -
                 ревем и все тут.
               </p>
-              <p class="text-[20px] mb-4">
+              <p
+               class="mt-12 mb-4"
+              >
                 Но тут деваться некуда. К тому же услышала вот такое определение
                 человека: “Человек - это животное, способное создавать новые
                 тексты”. Ну что ж, вот и случай понять отношусь ли я к
                 человекам.
               </p>
             </div>
+            </div>
           </div>
         </section>
+
+
+
         <section class="relative hidden w-full lg:block">
           <div class="px-[5%] text-white text-center mt-14 mb-14">
             <h1 class="text-[70px] font-bold">Вот они</h1>
@@ -450,18 +480,66 @@
             <img
               src="images/desktop-images/threeWomen-desktop.jpg"
               alt="Три женщины, три поколения: я, моя мама и моя доча Маша"
-              class="object-cover w-full h-auto"
+              class="object-cover w-[800px]  h-auto mx-auto"
             />
+          </div>
+        </section>
+
+        <section class="relative hidden w-full lg:block">
+          <div
+            class="mx-auto text-center text-white mt-14 mb-14"
+            style="width: 60%"
+          >
+
+
+            <h3 class="text-[25px] mb-16 mt-16">
+              Моя история разделена на четыре части:
+            </h3>
+             <div
+                  class="mx-auto max-w-[700px] text-center text-[30px]"
+                >
+            <p class="mb-4 ">
+              Первая глава рассказывает о внезапном, но мощном осознании,
+              которое пробудилось внутри меня и подтолкнуло к самому трудному
+              выбору в моей жизни: покинуть единственный дом, который я знала.
+            </p>
+            <p class="mb-4 ">
+              Вторая глава посвящена нашему новому началу в Израиле — жизни,
+              полной испытаний, но также чудес, красоты и открытий. Это была
+              земля, где нам пришлось строить всё с нуля, но каждый маленький
+              шаг вперёд ощущался как настоящая победа.
+            </p>
+            <p class="mb-4">
+              Третья глава принадлежит моей матери. Через её письма вы увидите
+              наш путь её глазами — её надежды, её страхи, её тихую силу, с
+              которой она встречала перемены, окружавшие нас.
+            </p>
+            <p class="mb-4 ">
+              И, наконец, последняя глава — это сборник маленьких историй,
+              которые рассказала моя дочь, — историй, порой забавных, порой
+              трогательных, но всегда наполненных духом ребёнка, который,
+              несмотря ни на что, находил в себе силы смеяться, мечтать и расти.
+            </p>
+            <p class="mb-4 ">
+              Я рада поделиться своей историей с вами
+            </p>
           </div>
         </section>
         <section class="relative hidden w-full lg:block">
           <div class="px-[5%] text-white text-center mt-28 mb-14">
             <h2 class="text-[65px]">cписок глав</h2>
           </div>
+                  </div>
         </section>
       </div>
+          <div id="footer-placeholder-mobile" class="block md:block lg:hidden"></div>
+
+    <!----calling the fotter desktop--->
+    <div id="footer-placeholder-desktop" class="hidden lg:block"></div>
       <!--------------------------closing the main block-------------------------------->
       <!-------------------------------------------------------------------------------->
+      <script src="navbar.js"></script>
+          <script src="load-footer.js"></script>
     </main>
   </body>
 </html>
