@@ -2,22 +2,23 @@
   <!-- Only show the wave SVG on desktop screens -->
   <div class="relative hidden w-full max-w-full lg:block">
     <img
-      src="images/desktop-images/Group 1842.svg"
+      src="images/desktop-images/ddd.svg"
       alt="Footer SVG"
       class="block w-full"
     />
 
     <!-- Chapter grid over the SVG (desktop only) -->
     <div
-      class="absolute z-10 grid w-full max-w-7xl grid-cols-2 grid-rows-2 gap-12 px-4 py-16 transform -translate-x-1/2 top-[400px] left-1/2"
+      class="absolute z-10 grid w-full max-w-7xl grid-cols-2 grid-rows-2 gap-12 px-4 py-16 transform -translate-x-1/2 top-[100px] lg:top-[100px] xl:top-[300px] left-1/2"
     >
+    
       <!-- Chapter 1 -->
       <div class="p-6">
-        <h1 class="mb-2 text-[70px]">01</h1>
+        <h1 class="mb-2 text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px]">01</h1>
 
-        <h2 class="mb-2 text-[30px]">Почему я уехала</h2>
+        <h2 class="mb-8 text-[30px] lg:text-[25px] xl:text-[28px] 2xl:text-[30px]">Почему я уехала</h2>
 
-        <p class="mb-2 text-[20px]">
+        <p class="mb-2 text-[20px] lg:text-[18px] xl:text-[19px] 2xl:text-[20px]">
           Почему я уехала. Что заставило меня в свои почти 50 лет с 7-летней
           дочкой и 83-летней очень нездоровой мамой оставить все, все, все и
           уехать в совершенно незнакомую страну, не зная даже алфавита языка, на
@@ -52,9 +53,9 @@
 
       <!-- Chapter 2 -->
       <div class="p-6">
-        <h1 class="mb-2 text-[70px]">02</h1>
-        <h2 class="mb-2 text-[30px]">Прилетели мы в Израиль</h2>
-        <p class="text-[20px]">
+        <h1 class="mb-2 text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px]">02</h1>
+        <h2 class="mb-8 text-[30px] lg:text-[25px] xl:text-[28px] 2xl:text-[30px]">Прилетели мы в Израиль</h2>
+        <p class="mb-2 text-[20px] lg:text-[18px] xl:text-[19px] 2xl:text-[20px]">
           Прилетели мы в Израиль поздним вечером 17 июня 1990 года. Летели
           венгерской авиакомпанией Малев с пересадкой в Будапеште. В аэропорту
           нас, летевших в Тель-Авив, отделили от остальных пассажиров, выставили
@@ -88,9 +89,9 @@
 
       <!-- Chapter 3 -->
       <div class="p-6">
-        <h1 class="mb-2 text-[70px]">03</h1>
-        <h2 class="mb-2 text-[30px]">Моя мама</h2>
-        <p class="text-[20px]">
+        <h1 class="mb-2 text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px]">03</h1>
+        <h2 class="mb-8 text-[30px] lg:text-[25px] xl:text-[28px] 2xl:text-[30px]">Моя мама</h2>
+        <p class="mb-2 text-[20px] lg:text-[18px] xl:text-[19px] 2xl:text-[20px]">
           Я не помню, как мы ехали в Израиль, но я помню, как мы уезжали из
           России. Я помню мои первые годы в Израиле. В первую неделю в Реховоте
           я купила жвачки, из которых можно было делать пузыри...
@@ -122,9 +123,9 @@
 
       <!-- Chapter 4 -->
       <div class="p-6">
-        <h1 class="mb-2 text-[70px]">04</h1>
-        <h2 class="mb-2 text-[30px]">Моя Masha</h2>
-        <p class="text-[20px]">
+        <h1 class="mb-2 text-[70px] lg:text-[50px] xl:text-[60px] 2xl:text-[70px]">04</h1>
+        <h2 class="mb-8 text-[30px] lg:text-[25px] xl:text-[28px] 2xl:text-[30px]">Моя Masha</h2>
+        <p class="mb-2 text-[20px] lg:text-[18px] xl:text-[19px] 2xl:text-[20px]">
           Я не помню, как мы ехали в Израиль, но я помню, как мы уезжали из
           России. Я помню мои первые годы в Израиле. В первую неделю в Реховоте
           я купила жвачки, из которых можно было делать пузыри...
@@ -157,10 +158,11 @@
 
 
 
-    <!-- Centered buttons below all chapters -->
-<div class="flex items-center justify-center w-full col-span-2 mt-10 space-x-6">
- <!-- Unified pill-style nav buttons -->
-<div class="flex items-center justify-center col-span-2 mt-10">
+<!-- Centered buttons below all chapters -->
+<div class="w-full col-span-2 mt-10">
+
+  <!-- First two buttons side by side -->
+  <div class="flex items-center justify-center space-x-2">
     <button
       type="button"
       class="group relative overflow-hidden sm:px-8 sm:py-4 px-5 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent text-base sm:text-lg tracking-wide uppercase transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white hover:pl-8 hover:pr-8 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
@@ -178,10 +180,9 @@
       назад
     </button>
 
-    <!-- Forward Button -->
     <button
       type="button"
-      class="group relative overflow-hidden sm:px-8 sm:py-4 px-5 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent text-base sm:text-lg tracking-wide uppercase transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white hover:pl-8 hover:pr-8 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60 ml-2"
+      class="group relative overflow-hidden sm:px-8 sm:py-4 px-5 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent text-base sm:text-lg tracking-wide uppercase transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white hover:pl-8 hover:pr-8 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
       aria-label="вперёд"
     >
       вперёд
@@ -195,15 +196,28 @@
         <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
       </svg>
     </button>
+  </div>
+
+  <!-- Third button centered below -->
+  <div class="flex justify-center mt-32">
+    <button
+      type="button"
+      class="group relative overflow-hidden sm:px-8 sm:py-4 px-5 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent text-base sm:text-lg tracking-wide uppercase transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white hover:pl-8 hover:pr-8 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
+      aria-label="Свяжитесь со мной"
+    >
+      Свяжитесь со мной
+    </button>
+  </div>
+
 </div>
-</div>
+
   <!-- Centered buttons below all chapters -->
     <!-- Small centered text below buttons -->
-<section class="font-['Roboto'] col-span-2 mt-4 text-sm text-center text-[20px] " >
+<section class="font-['Roboto'] col-span-2 mt-4 text-sm text-center text-[25px] " >
   <div
-    class="space-y-1 leading-relaxed text-white sm:space-y-2 md:space-y-3 lg:space-y-3 "
+    class="space-y-1 leading-relaxed text-white mt-36 sm:space-y-2 md:space-y-3 lg:space-y-3 "
   >
-    <p class="mt-8 font-bold tracking-wider sm:mt-8">
+    <p class="mt-16 font-bold tracking-wider sm:mt-8">
       © 2025 Galina Lavigina — all rights reserved.
     </p>
     <p class="mt-4 sm:mt-6">
