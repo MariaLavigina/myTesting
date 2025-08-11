@@ -1,0 +1,38 @@
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-weight: bold;
+}
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+}
+p {
+  font-family: "Roboto", sans-serif;
+}
+footer p {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+}
+footer h1 {
+  font-family: "Playfair Display", serif;
+  /* font-style: italic; */
+  font-size: 85px;
+}
+.chapter-footer h2 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 25px;
+}
+
+.navbartop a {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+}
+
+p em {
+  font-style: italic;
+  color: white; /* or your preferred color */
+}

@@ -10,6 +10,9 @@ module.exports = {
         playfair: ["'Playfair Display'", "serif"],
         roboto: ["Roboto", "sans-serif"],
       },
+      screens: {
+        l: "1277px", // your custom breakpoint
+      },
     },
   },
   plugins: [],
