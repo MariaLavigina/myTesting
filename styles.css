@@ -1,12 +1,10 @@
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Playfair Display", serif;
   font-style: italic;
 }
-h3 {
-  font-family: "Roboto", sans-serif;
-  font-style: italic;
-}
+
 
 /* If you want specific headings to be italic, add classes like these: */
 .italic-heading {
@@ -29,8 +27,17 @@ footer h1 {
 .chapter-footer h2 {
   font-family: "Playfair Display", serif;
   font-style: italic;
-  font-size: 25px;
+  font-size: 55px;
 }
+
+.chapter-footer h3 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  font-size: 28px;
+}
+
+
+
 
 .navbartop a {
   font-family: "Roboto", sans-serif;
