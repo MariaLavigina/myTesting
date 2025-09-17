@@ -20,7 +20,11 @@ cd C:\Users\maria\Desktop\test
 Run the local server:
 
 http-server
+
 ```
+
+If not working do firs:  
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
 
 ### Open your browser and go to:
 
