@@ -35,7 +35,10 @@
     <!-- Navbar -->
     <div id="navbar-placeholder"></div>
 
-    <div class="w-full bg-cover bg-center bg-no-repeat min-h-screen flex items-center justify-center" style="background-image: url('images/desktop-images/thank-you.jpg');">
+    <div class="w-full min-h-screen flex items-center justify-center bg-[#302024]">
+               
+
+
 
       <form 
         name="contact" 
@@ -43,7 +46,7 @@
         data-netlify="true" 
         netlify-honeypot="bot-field"
         action="/thank-you.html"
-        class="w-full max-w-[500px] mx-auto p-8 bg-[#302024] shadow-xl space-y-4 mt-12"
+        class="w-full max-w-[500px] mx-auto p-8  space-y-4 mt-12"
 
       >
         <!-- Required hidden fields -->
@@ -145,13 +148,39 @@
         <!-- Submit button -->
         <div class="flex justify-center">
           <div class="inline-block rounded-full focus-within:ring-2 focus-within:ring-white/60">
-            <button
-              type="submit"
-              class="text-base sm:px-8 sm:py-4 px-6 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent transition-all duration-200 ease-in-out hover:bg-white/10 hover:text-white active:bg-[#FADADD] active:text-[#273f44] active:scale-[0.97] focus:outline-none"
-              aria-label="Отправить сообщение"
-            >
-              Отправить сообщение
-            </button>
+
+
+
+
+   <button
+  type="submit"
+  class="group relative overflow-hidden 
+         border border-white 
+         rounded-full 
+         text-white 
+         font-['Roboto'] 
+         bg-transparent 
+         tracking-wide 
+         transition-all duration-300 ease-in-out 
+         hover:bg-white/10 hover:scale-[1.02] 
+         active:bg-[#FADADD] active:text-[#412744]
+         
+         /* Base (mobile & tablet) */
+         px-6 py-3 text-sm
+
+         /* Desktop breakpoints */
+         lg:px-5 lg:py-2.5 lg:text-sm
+         xl:px-6 xl:py-3 xl:text-base
+         2xl:px-7 2xl:py-3.5 2xl:text-lg"
+  aria-label="Отправить сообщение"
+>
+  Отправить сообщение
+</button>
+
+
+
+
+
           </div>
         </div>
       </form>
@@ -163,4 +192,8 @@
   </body>
 
 </html>
+
+
+
+
 

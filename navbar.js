@@ -23,6 +23,51 @@ document.addEventListener("DOMContentLoaded", function () {
           line2.classList.toggle("opacity-0");
         });
       }
+
+
+
+
+
+
+    // Smooth scroll for "списки глав" links (desktop and mobile)
+const chapterLinks = mobileMenu.querySelectorAll('a[href*="#link-to-four-chapters-mobile"]');
+const desktopChapterLink = document.querySelector('a[href*="#link-to-four-chapters-desktop"]');
+
+// Combine mobile and desktop links
+const allChapterLinks = [...chapterLinks];
+if (desktopChapterLink) allChapterLinks.push(desktopChapterLink);
+
+allChapterLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    const targetId = link.getAttribute("href").split("#")[1];
+    const targetElement = document.getElementById(targetId);
+
+    if (!targetElement) {
+      // If the target element is not on this page, navigate to index.html with hash
+      window.location.href = `index.html#${targetId}`;
+      return;
+    }
+
+    // If the element exists, smooth scroll
+    e.preventDefault();
+    targetElement.scrollIntoView({ behavior: "smooth" });
+
+    // Close mobile menu if open
+    if (mobileMenu && !mobileMenu.classList.contains("hidden")) {
+      mobileMenu.classList.add("hidden");
+      mobileMenu.classList.remove("scale-y-100");
+      line1.classList.remove("rotate-45", "translate-y-[6px]");
+      line2.classList.remove("opacity-0");
+      line3.classList.remove("-rotate-45", "-translate-y-[6px]");
+    }
+  });
+});
+
+
+
+
+
+
     })
     .catch((error) => {
       console.error("Error loading navbar:", error);
