@@ -63,3 +63,15 @@ Both point to the same project, just viewed from different network perspectives.
 ## refresh to see the newest version
 
 Ctrl + Shift + R
+
+## gitHub deployment
+
+https://github.com/MariaLavigina/myTesting
+
+## netlify - deployment from master gitHub
+
+https://galina-lavigina-my-story.netlify.app/
+
+## analytics.google
+
+https://analytics.google.com/analytics/web/#/a371110623p508333052/realtime/overview?params=_u..nav%3Dmaui
