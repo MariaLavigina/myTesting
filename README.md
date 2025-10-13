@@ -75,3 +75,11 @@ https://galina-lavigina-my-story.netlify.app/
 ## analytics.google
 
 https://analytics.google.com/analytics/web/#/a371110623p508333052/realtime/overview?params=_u..nav%3Dmaui
+
+## merge gh-pages into master while keeping master’s history
+
+git checkout master
+git merge gh-pages --- Merge gh-pages into master
+git add .
+git commit -m "Resolved merge conflicts from gh-pages
+git push origin master
