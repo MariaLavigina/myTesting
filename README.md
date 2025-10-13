@@ -83,3 +83,7 @@ git merge gh-pages --- Merge gh-pages into master
 git add .
 git commit -m "Resolved merge conflicts from gh-pages
 git push origin master
+
+## merge master into gh-pages and push in one go, safely:
+
+git checkout gh-pages && git merge master --no-edit && git push origin gh-pages
