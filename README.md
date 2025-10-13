@@ -1,4 +1,4 @@
-# you can visit this website at:
+# Visit galina-lavigina-my-story at:
 
 https://galina-lavigina-my-story.netlify.app/
 
