@@ -20,7 +20,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <link
-    href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
     <link
@@ -29,54 +29,47 @@
     />
     <link rel="stylesheet" href="styles.css" />
 
+    <!-- Google tag (gtag.js) -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-E42S6FMRNN"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-
-   <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-E42S6FMRNN"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-E42S6FMRNN');
-</script>
-
-
+      gtag("config", "G-E42S6FMRNN");
+    </script>
   </head>
 
-
-
-<body class=" text-white flex items-center justify-center min-h-screen px-4"
- style="background-image: url('images/desktop-images/thank-you.jpg');"
->
-
-  <main class="max-w-[500px]  text-center bg-[#302024]  p-20  shadow-md">
-    <h1 class="text-[50px] mb-4 text-[#ffffff]">Thank You!</h1>
-
-    <p class="text-base mb-14">
-      Спасибо за ваше сообщение! Оно успешно отправлено. 
-    </p>
-
-
- <div class="flex justify-center">
-  <div class="inline-block rounded-full focus-within:ring-2 focus-within:ring-white/60">
-    <a
-      href="index.html"
-      class=" text-base sm:px-8 sm:py-4 px-6 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] transition-all duration-200 ease-in-out hover:bg-white/10 hover:text-white active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none"
-      aria-label="Return to Home"
+  <body
+    class="text-white flex items-center justify-center h-screen px-4 bg-[url('images/mobile-images/bg-thank-you-mobile.WebP')] lg:bg-[url('images/bg-contact-me-desktop.WebP')] bg-cover bg-center"
+  >
+    <main
+      class="max-w-[500px] w-full text-center bg-[#302024] p-10 sm:p-20 shadow-md"
     >
-      Return to Home
-    </a>
-  </div>
-</div>
-  </main>
-</body>
+      <h1 class="text-4xl sm:text-[45px] mb-4 text-white">Спасибо!</h1>
+
+      <p class="text-xl mb-14 leading-relaxed">
+        Спасибо за ваше сообщение! Оно успешно отправлено.
+      </p>
+
+      <div class="flex justify-center">
+        <div
+          class="inline-block rounded-full focus-within:ring-2 focus-within:ring-white/60"
+        >
+          <a
+            href="index.html"
+            class="text-base sm:px-8 sm:py-4 px-6 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] transition-all duration-200 ease-in-out hover:bg-white/10 hover:text-white active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none"
+            aria-label="Return to Home"
+          >
+            Главная страница
+          </a>
+        </div>
+      </div>
+    </main>
+  </body>
 </html>
-
-
-
-
-
-
-
-

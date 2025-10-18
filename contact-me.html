@@ -49,93 +49,92 @@
     <!-- Navbar -->
     <div id="navbar-placeholder"></div>
 
+    <!--contact me form-->
+    <!--contact me form-->
     <div
-      class="w-full min-h-screen flex items-center justify-center bg-[#302024]"
+      class="w-full min-h-screen flex items-start sm:items-center justify-center pt-12 sm:pt-0 bg-[#302024] sm:bg-[url('/images/bg-contact-me-desktop.WebP')] sm:bg-cover sm:bg-center sm:bg-no-repeat"
     >
-      <form
-        name="contact"
-        method="POST"
-        data-netlify="true"
-        netlify-honeypot="bot-field"
-        action="/thank-you.html"
-        class="w-full max-w-[500px] mx-auto p-8 space-y-4 mt-12"
+      <!-- Wrapper: purple only on tablet+ -->
+      <div
+        class="w-full max-w-[500px] mx-auto p-8 sm:bg-[#302024] sm:p-6 md:sm:p-8 lg:sm:p-10 sm:shadow-[0_0_25px_rgba(0,0,0,0.6)]"
       >
-        <!-- Required hidden fields -->
-        <input type="hidden" name="form-name" value="contact" />
+        <form
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          netlify-honeypot="bot-field"
+          action="/thank-you.html"
+          class="space-y-6"
+        >
+          <!-- Required hidden fields -->
+          <input type="hidden" name="form-name" value="contact" />
 
-        <!-- Honeypot field (anti-spam) -->
-        <p class="hidden">
-          <label style="font-family: 'Roboto', sans-serif"
-            >Don’t fill this out if you’re human: <input name="bot-field"
-          /></label>
-        </p>
+          <!-- Form title -->
+          <h1 class="text-3xl text-white">Свяжитесь со мной</h1>
 
-        <!-- Name -->
-        <h1 class="text-3xl pb-8 text-[#ffffff]">Свяжитесь со мной</h1>
-        <div>
-          <label for="name" class="block text-base font-medium text-[#ffffff]"
-            >Ваше имя</label
-          >
-          <input
-            type="text"
-            name="name"
-            id="name"
-            required
-            aria-label="Ваше имя"
-            class="mt-1 block w-full bg-white/5 border-b border-white/70 text-white placeholder-white/90 rounded-sm shadow-inner shadow-black/30 text-lg py-1.5 transition-colors duration-300 ease-in-out focus:outline-none focus:border-white focus:placeholder-white focus:bg-white/10 caret-white"
-            autocomplete="name"
-            spellcheck="false"
-          />
-        </div>
+          <!-- Name & Email side-by-side on tablet+ -->
+          <div class="flex flex-col sm:flex-row gap-4">
+            <!-- Name -->
+            <div class="flex-1 flex flex-col">
+              <label
+                for="name"
+                class="block text-base font-medium text-white mb-1"
+                >Ваше имя</label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                required
+                class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+              />
+            </div>
 
-        <!-- Email -->
-        <div>
-          <label for="email" class="block text-base font-medium text-[#ffffff]"
-            >Ваш email</label
-          >
-          <input
-            type="email"
-            name="email"
-            id="email"
-            required
-            aria-label="Ваш email"
-            class="mt-1 block w-full bg-white/5 border-b border-white/70 text-white placeholder-white/90 rounded-sm shadow-inner shadow-black/30 text-lg py-1.5 transition-colors duration-300 ease-in-out focus:outline-none focus:border-white focus:placeholder-white focus:bg-white/10 caret-white"
-            autocomplete="email"
-            spellcheck="false"
-          />
-        </div>
+            <!-- Email -->
+            <div class="flex-1 flex flex-col">
+              <label
+                for="email"
+                class="block text-base font-medium text-white mb-1"
+                >Ваш email</label
+              >
+              <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+              />
+            </div>
+          </div>
 
-        <!-- Message -->
-        <div>
-          <label
-            for="message"
-            class="block text-base font-medium text-[#ffffff]"
-            >Ваше cообщение</label
-          >
-          <textarea
-            name="message"
-            id="message"
-            rows="5"
-            required
-            class="mt-1 block w-full bg-white/5 border-b border-white/70 text-white placeholder-white/90 rounded-sm shadow-inner shadow-black/30 text-lg py-1.5 transition-colors duration-300 ease-in-out focus:outline-none focus:border-white focus:placeholder-white focus:bg-white/10 caret-white"
-          ></textarea>
-        </div>
+          <!-- Message textarea -->
+          <div class="flex flex-col">
+            <label
+              for="message"
+              class="block text-base font-medium text-white mb-1"
+              >Ваше сообщение</label
+            >
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              required
+              class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+            ></textarea>
+          </div>
 
-        <!-- Submit button -->
-        <div class="flex justify-center">
-          <div
-            class="inline-block rounded-full focus-within:ring-2 focus-within:ring-white/60"
-          >
+          <!-- Submit button -->
+          <div class="flex justify-center mt-4">
             <button
               type="submit"
-              class="group relative overflow-hidden border border-white rounded-full text-white font-['Roboto'] bg-transparent tracking-wide transition-all duration-300 ease-in-out hover:bg-white/10 hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] /* Base (mobile & tablet) */ px-6 py-3 text-sm /* Desktop breakpoints */ lg:px-5 lg:py-2.5 lg:text-sm xl:px-6 xl:py-3 xl:text-base 2xl:px-7 2xl:py-3.5 2xl:text-lg"
+              class="text-base sm:px-8 sm:py-4 px-6 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] transition-all duration-200 ease-in-out hover:bg-white/10 hover:text-white active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none"
               aria-label="Отправить сообщение"
             >
               Отправить сообщение
             </button>
           </div>
-        </div>
-      </form>
+        </form>
+      </div>
     </div>
 
     <script src="navbar.js"></script>
