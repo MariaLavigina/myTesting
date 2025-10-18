@@ -53,9 +53,21 @@
     >
       <h1 class="text-4xl sm:text-[45px] mb-4 text-white">Спасибо!</h1>
 
-      <p class="text-xl mb-14 leading-relaxed">
+      <p id="personal-message" class="text-xl mb-14 leading-relaxed text-white">
         Спасибо за ваше сообщение! Оно успешно отправлено.
       </p>
+
+      <script>
+        const params = new URLSearchParams(window.location.search);
+        const name = params.get("name");
+
+        if (name && name.trim() !== "") {
+          const formattedName = name.charAt(0).toUpperCase() + name.slice(1);
+          document.querySelector(
+            "h1"
+          ).textContent = `Спасибо, ${formattedName}!`;
+        }
+      </script>
 
       <div class="flex justify-center">
         <div

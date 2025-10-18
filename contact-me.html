@@ -68,6 +68,7 @@
         >
           <!-- Required hidden fields -->
           <input type="hidden" name="form-name" value="contact" />
+          <input type="hidden" name="bot-field" />
 
           <!-- Form title -->
           <h1 class="text-3xl text-white">Свяжитесь со мной</h1>
@@ -86,7 +87,7 @@
                 name="name"
                 id="name"
                 required
-                class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+                class="flex-1 w-full bg-[#4a3d5c] border border-transparent text-white placeholder-white/90 rounded-md text-lg px-3 py-1.5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] transition duration-300 ease-in-out focus:outline-none focus:border-[#FADADD] focus:ring-2 focus:ring-[#FADADD] focus:ring-offset-0 caret-white"
               />
             </div>
 
@@ -102,7 +103,7 @@
                 name="email"
                 id="email"
                 required
-                class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+                class="flex-1 w-full bg-[#4a3d5c] border border-transparent text-white placeholder-white/90 rounded-md text-lg px-3 py-1.5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] transition duration-300 ease-in-out focus:outline-none focus:border-[#FADADD] focus:ring-2 focus:ring-[#FADADD] focus:ring-offset-0 caret-white"
               />
             </div>
           </div>
@@ -119,7 +120,7 @@
               id="message"
               rows="5"
               required
-              class="flex-1 w-full bg-[#4a3d5c] border-b border-white/70 text-white placeholder-white/90 rounded-sm text-lg px-3 py-1.5 transition duration-300 ease-in-out focus:outline-none focus:border-white focus:bg-[#4d3452] focus:shadow-[inset_0_2px_6px_rgba(0,0,0,0.6)] shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] caret-white"
+              class="flex-1 w-full bg-[#4a3d5c] border border-transparent text-white placeholder-white/90 rounded-md text-lg px-3 py-1.5 shadow-[inset_0_2px_4px_rgba(0,0,0,0.4)] transition duration-300 ease-in-out focus:outline-none focus:border-[#FADADD] focus:ring-2 focus:ring-[#FADADD] focus:ring-offset-0 caret-white"
             ></textarea>
           </div>
 
@@ -127,7 +128,7 @@
           <div class="flex justify-center mt-4">
             <button
               type="submit"
-              class="text-base sm:px-8 sm:py-4 px-6 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] transition-all duration-200 ease-in-out hover:bg-white/10 hover:text-white active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none"
+              class="group relative overflow-hidden px-4 md:px-5 py-3 border border-white rounded-full text-white font-normal font-['Roboto'] bg-transparent text-sm md:text-base tracking-wide transition-all duration-300 ease-in-out hover:bg-white/10 hover:text-white hover:pl-8 hover:pr-8 hover:shadow-[0_0_20px_rgba(255,255,255,0.15)] hover:scale-[1.02] active:bg-[#FADADD] active:text-[#412744] active:scale-[0.97] focus:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
               aria-label="Отправить сообщение"
             >
               Отправить сообщение
@@ -138,5 +139,16 @@
     </div>
 
     <script src="navbar.js"></script>
+
+    <!--includes the name in the query string when submitting-->
+    <script>
+      const form = document.querySelector('form[name="contact"]');
+      form.addEventListener("submit", function (e) {
+        const nameInput = document.getElementById("name").value.trim();
+
+        // Add the name to the thank-you URL
+        form.action = "/thank-you.html?name=" + encodeURIComponent(nameInput);
+      });
+    </script>
   </body>
 </html>
