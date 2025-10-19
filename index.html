@@ -22,6 +22,10 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
+    <!-- Preconnect to speed up Google Fonts loading -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
@@ -50,6 +54,7 @@
   <body class="m-0 p-0 bg-[#302024]">
         <!-- Navbar -->
     <div id="navbar-placeholder"></div>
+     <main lang="ru">
 
       <!------------------------------the main block-------------------------------------->
       <!---------------------------------------------------------------------------------->
@@ -95,9 +100,9 @@
                   <p class="mb-4">
                     Я решила назвать свою историю «Каждый выбирает для себя», потому что в конце концов, где бы мы ни родились и чему бы нас ни учили, каждому из нас приходится делать СВОЙ выбор. Выбор между страхом и дерзостью, между молчанием и живым словом , между выживанием и подлинной жизнью.
                   </p>
-                    Это история о том, как свой выбор сделала я.
+                
                   <p>
-
+                  Это история о том, как свой выбор сделала я.
                   </p>
 
                 </div>
@@ -457,15 +462,31 @@
       </div>
 
 
+
+
+<!-- start Scroll down indicator -->
+<div id="scroll-down" class="fixed bottom-8 left-1/2 transform -translate-x-1/2 z-50 flex flex-col items-center transition-opacity duration-300">
+  <div
+    class="animate-bounce bg-white/30 text-white w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16 lg:w-16 lg:h-16 rounded-full flex items-center justify-center cursor-pointer shadow-lg"
+    aria-label="Scroll down"
+    tabindex="0"
+  >
+    <i class="fa-solid fa-arrow-down text-xl sm:text-2xl md:text-3xl lg:text-3xl"></i>
+  </div>
+  </div>
+  <!-- end Scroll down indicator -->
+ 
+
+   <!---------------closing the main block------------------>
+  </main>
+       
+
           <div id="footer-placeholder-mobile" class="block md:block lg:hidden"></div>
           <div id="footer-placeholder-desktop" class="hidden lg:block"></div>
-      <!--------------------------closing the main block-------------------------------->
-      <!-------------------------------------------------------------------------------->
 
-
-
+<script src="scroll-down.js"></script>
       <script src="navbar.js"></script>
           <script src="load-footer.js"></script>
-    </main>
+
   </body>
 </html>
