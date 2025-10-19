@@ -21,6 +21,14 @@
       content="Это история о том как трудный выбор обернулся неожиданным, невероятным счастьем"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    
+<!--Don’t show the page until everything (CSS, SVGs, images) has fully loaded.-->
+    <style>body { visibility: hidden; }</style>
+<script>
+  window.addEventListener('load', () => {
+    document.body.style.visibility = 'visible';
+  });
+</script>
 
     <!-- Preconnect to speed up Google Fonts loading -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
