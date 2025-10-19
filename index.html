@@ -21,16 +21,15 @@
       content="Это история о том как трудный выбор обернулся неожиданным, невероятным счастьем"
     />
     <script src="https://cdn.tailwindcss.com"></script>
-    
-<!--Don’t show the page until everything (CSS, SVGs, images) has fully loaded.-->
-    <style>body { visibility: hidden; }</style>
-<script>
-  window.addEventListener('load', () => {
-    document.body.style.visibility = 'visible';
-  });
-</script>
 
-    <!-- Preconnect to speed up Google Fonts loading -->
+
+   
+     <!-- Preload critical images -->
+     <link rel="preload" href="/images/desktop-images/GL_HeroPhoto_Desktop_withText.jpg" as="image">
+     <link rel="preload" href="/images/desktop-images/firstSVG-mainPage-desktop.svg" as="image">
+     <link rel="preload" href="/images/mobile-images/GL-HeroPhoto-Mobile.jpg" as="image">
+<link rel="preload" href="/images/mobile-images/index-wave-mobile.svg" as="image">
+ <!-- Preconnect to speed up Google Fonts loading -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
@@ -54,6 +53,22 @@
   gtag('js', new Date());
 
   gtag('config', 'G-E42S6FMRNN');
+</script>
+
+
+<style>
+  body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+<script>
+  function showBody() {
+    document.body.style.opacity = '1';
+  }
+
+  // Wait for everything (fonts + images) to load
+  window.addEventListener('load', showBody);
 </script>
 
   </head>
