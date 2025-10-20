@@ -67,7 +67,22 @@
   gtag('config', 'G-E42S6FMRNN');
 </script>
 
+<!--for the smooth fade effect-->
+<style>
+  body {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+</style>
+<script>
+  function showBody() {
+    document.body.style.opacity = '1';
+  }
 
+  // Wait for everything (fonts + images) to load
+  window.addEventListener('load', showBody);
+</script>
+<!--for the smooth fade effect-->
 
   </head>
 
