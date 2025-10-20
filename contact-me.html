@@ -50,6 +50,23 @@
 
       gtag("config", "G-E42S6FMRNN");
     </script>
+
+    <!--for the smooth fade effect-->
+    <style>
+      body {
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+      }
+    </style>
+    <script>
+      function showBody() {
+        document.body.style.opacity = "1";
+      }
+
+      // Wait for everything (fonts + images) to load
+      window.addEventListener("load", showBody);
+    </script>
+    <!--for the smooth fade effect-->
   </head>
 
   <body class="m-0 p-0">
@@ -60,7 +77,7 @@
       <!--contact me form-->
 
       <div
-        class="w-full min-h-screen flex items-start sm:items-center justify-center pt-12 sm:pt-0 bg-[#302024] sm:bg-[url('/images/bg-contact-me-desktop.WebP')] sm:bg-cover sm:bg-center sm:bg-no-repeat"
+        class="w-full min-h-screen flex items-start sm:items-center justify-center pt-12 sm:pt-0 bg-[#302024] sm:bg-[url('/images/bg-contact-me-desktop.Webp')] sm:bg-cover sm:bg-center sm:bg-no-repeat"
       >
         <!-- Wrapper: purple only on tablet+ -->
         <div
