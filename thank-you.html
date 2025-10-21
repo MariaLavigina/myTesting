@@ -26,6 +26,15 @@
       as="image"
     />
 
+    <!-- Preload Thank You mobile background image -->
+    <link rel="preload" href="./images/bg-contact-me-desktop.webp" as="image" />
+    <!-- Preload Thank You mobile background image -->
+    <link
+      rel="preload"
+      href="./images/mobile-images/bg-thank-you-mobile.webp"
+      as="image"
+    />
+
     <!-- Preconnect to speed up Google Fonts loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -74,7 +83,7 @@
   </head>
 
   <body
-    class="text-white flex items-center justify-center h-screen px-4 bg-[url('images/mobile-images/bg-thank-you-mobile.webp')] lg:bg-[url('images/bg-contact-me-desktop.webp')] bg-cover bg-center"
+    class="text-white flex items-center justify-center h-screen px-4 bg-[url('./images/mobile-images/bg-thank-you-mobile.webp')] lg:bg-[url('./images/bg-contact-me-desktop.webp')] bg-cover bg-center"
   >
     <main
       lang="ru"
