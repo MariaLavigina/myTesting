@@ -88,6 +88,12 @@ git add .
 git commit -m "Resolved merge conflicts from gh-pages"
 git push origin master
 
+## If there are no conflicts (most likely for a solo project):
+
+git checkout master
+git merge gh-pages
+git push origin master
+
 ## merge master into gh-pages and push in one go, safely:
 
 git checkout gh-pages && git merge master --no-edit && git push origin gh-pages
