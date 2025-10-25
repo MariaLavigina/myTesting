@@ -83,9 +83,9 @@ https://analytics.google.com/analytics/web/#/a371110623p508333052/realtime/overv
 ## merge gh-pages into master while keeping master’s history
 
 git checkout master
-git merge gh-pages --- Merge gh-pages into master
+git merge gh-pages
 git add .
-git commit -m "Resolved merge conflicts from gh-pages
+git commit -m "Resolved merge conflicts from gh-pages"
 git push origin master
 
 ## merge master into gh-pages and push in one go, safely:
