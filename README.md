@@ -97,3 +97,18 @@ git push origin master
 ## merge master into gh-pages and push in one go, safely:
 
 git checkout gh-pages && git merge master --no-edit && git push origin gh-pages
+
+## naming of the pages
+
+index.html
+1-why-i-left.html
+2-decision-to-leave.html
+3-our-journey-from-the-ussr-to-israel.html
+4-we-arrived-in-israel.html
+5-our-first-steps-in-israel.html
+6-our-life-in-israel.html
+7-as-galina-grew-computers-shrunk.html
+8-mashas-first-days-in-israel.html
+9-my-mothers-story-through-her-letters.html
+contact-me.html
+thank-you.html

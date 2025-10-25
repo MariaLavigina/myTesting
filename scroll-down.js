@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const pagesWithScrollIcon = ['index.html', 'firstPage.html', 'forthPage.html', 'eightPage.html', 'ninePage.html'];
+  const pagesWithScrollIcon = ['index.html', '1-why-i-left.html', '4-we-arrived-in-israel.html', '8-mashas-first-days-in-israel.html', '9-my-mothers-story-through-her-letters.html'];
   const path = window.location.pathname.split('/').pop();
 
   const scrollDown = document.getElementById('scroll-down');

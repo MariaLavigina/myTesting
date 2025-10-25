@@ -1,0 +1,6 @@
+# Allow all search engines to crawl all pages
+User-agent: *
+Disallow:
+
+# Location of your sitemap
+Sitemap: https://galina-lavigina-my-story.netlify.app/sitemap.xml
